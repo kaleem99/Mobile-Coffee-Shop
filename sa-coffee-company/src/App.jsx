@@ -59,6 +59,8 @@ import MiniContact from "./components/MiniContact";
 
 import Story from "./components/Story";
 import { useState } from "react";
+import WhoWeAre from "./components/WhoWeAre";
+import CoffeeExperience from "./components/CoffeeExperiences";
 
 function App() {
   const [state, setState] = useState("Home");
@@ -94,7 +96,11 @@ function App() {
   };
   return (
     <div className="App">
-      <Navbar state={state} setState={setState} /> {changeNavbarSection()}
+      {/* <Navbar state={state} setState={setState} /> {changeNavbarSection()} */}
+      <WhoWeAre />
+      <br></br>
+      <CoffeeExperience />
+      <Footer />
     </div>
   );
 }

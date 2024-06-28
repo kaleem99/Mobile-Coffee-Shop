@@ -34,14 +34,14 @@ const Footer = () => {
             {FooterData.map((obj) => (
               <a rel="noreferrer" target="_blank" href={obj.url}>
                 <div className="box-A-Icon">{obj.icon}</div>
-                &nbsp;{obj.name}
+                {/* &nbsp;{obj.name} */}
               </a>
             ))}
           </div>
         </div>
         <div className="credit">
-          <FaRegCopyright className="lod" />
-          Copyright All rights reserved
+          {/* <FaRegCopyright className="lod" /> */}
+          <p class="mb-2 text-white">Copyright © <a class="font-weight-bold" href="#">Domain</a>. All Rights Reserved.</p>          
         </div>
       </section>
     </div>

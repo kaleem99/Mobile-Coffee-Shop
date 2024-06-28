@@ -3,10 +3,19 @@
 #BodyDiv {
   margin-top: 60px;
 }
+.App {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+  padding: 0px;
+}
 :root {
   --main-color: #222222;
   /* --secondary-color: #ff6600; */
-  --secondary-color: #663300;
+  --secondary-color: #d3d2c5;
 
   --tertiary-color: rgb(255, 255, 255);
   --hover-color: #ff6600;
@@ -74,17 +83,17 @@ section {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
   padding: 1rem 9%;
-  background-color: var(--cuppachino-color-light);
-  border-bottom: 5px solid var(--secondary-color);
+  /* background-color: var(--cuppachino-color-light); */
+  /* border-bottom: 5px solid var(--secondary-color); */
 }
 .NavActive {
   color: var(--secondary-color) !important;
 }
 .navigation .Logo {
-  color: var(--coffee-bean-dark);
-  font-size: 2.3rem;
+  color: white;
+  font-size: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -503,12 +512,12 @@ section {
 
 /* --------------------------------FOOTER START-------------------------------- */
 .footer {
-  /* background-color: var(--secondary-color); */
   background-color: var(--cuppachino-color-light);
   background-position: center;
   background-size: cover;
   border-top: 5px solid var(--secondary-color);
 }
+
 .footer .box-container {
   text-align: center;
   display: grid;
@@ -519,6 +528,7 @@ section {
 .box {
   margin: auto;
 }
+
 .footer .box-container .box h3 {
   padding: 1rem 0;
   font-size: 4.5rem;
@@ -549,7 +559,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  margin: auto;
 }
+
 .box-A-Icon {
   width: 50px;
   height: 50px;
@@ -560,15 +573,11 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 .footer .box-container .box a:hover {
-  display: block;
-  font-size: 1.8rem;
-  padding: 1rem 0;
   color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 .footer .box-container .box .lod:hover {
   padding-right: 2rem;
   color: var(--main-color);
@@ -580,6 +589,10 @@ section {
   padding: 2rem 1rem;
   margin-top: 1rem;
   color: grey;
+}
+a {
+  color: #da9f5b;
+  font-weight: 700;
 }
 
 /* --------------------------------FOOTER END-------------------------------- */

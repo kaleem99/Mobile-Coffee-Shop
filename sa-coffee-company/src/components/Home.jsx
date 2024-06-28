@@ -23,9 +23,9 @@ const Home = () => {
           <div className="ImageSlider">
             <div className="image">
               <Slide>
-                {backgroundImg.map((obj) => (
+                {/* {backgroundImg.map((obj) => (
                   <img src={obj.value} alt="" className="main-home-image" />
-                ))}
+                ))} */}
               </Slide>
             </div>
           </div>
