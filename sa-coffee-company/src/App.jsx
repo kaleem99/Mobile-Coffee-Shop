@@ -46,7 +46,7 @@
 // export default App;
 
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -61,6 +61,8 @@ import Story from "./components/Story";
 import { useState } from "react";
 import WhoWeAre from "./components/WhoWeAre";
 import CoffeeExperience from "./components/CoffeeExperiences";
+import Banner from "./components/Banner";
+import ProductList from "./components/ProductList";
 
 function App() {
   const [state, setState] = useState("Home");
@@ -97,10 +99,14 @@ function App() {
   return (
     <div className="App">
       {/* <Navbar state={state} setState={setState} /> {changeNavbarSection()} */}
+      <Navbar />
+      <Banner />
+      <ProductList />
       <WhoWeAre />
-      <br></br>
       <CoffeeExperience />
+      <Book/>
       <Footer />
+
     </div>
   );
 }

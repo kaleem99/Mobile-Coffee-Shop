@@ -1,0 +1,135 @@
+.product-list {
+    padding: 40px;
+    text-align: center;
+    border-top: 5px solid #ff6600;
+  }
+  
+  .product-list-title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-list-subtitle {
+    font-size: 36px;
+    color: #beac94;
+    margin-bottom: 20px;
+  }
+  
+  .product-categories a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    position: relative;
+    flex: 1 1 calc(25% - 20px); /* Adjusts for desktop */
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-image {
+    height: 250px;
+  }
+  
+  .sale-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  .product-info {
+    text-align: left;
+  }
+  
+  .product-info h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    margin-bottom: 10px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: #999;
+  }
+  
+  .discounted-price {
+    color: #beac94;
+  }
+  
+  .range-price,
+  .fixed-price {
+    color: #333;
+  }
+  
+  .read-more,
+  .select-options,
+  .add-to-cart,
+  .view-all-products {
+    background-color: #beac94;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .view-all-products {
+    margin-top: 30px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .product-card {
+      flex: 1 1 calc(33.33% - 20px); /* Adjusts for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      flex: 1 1 calc(50% - 20px); /* Adjusts for small tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      flex: 1 1 100%; /* Adjusts for mobile */
+    }
+    
+    .products {
+      width: 100%;
+    }
+  }
+  

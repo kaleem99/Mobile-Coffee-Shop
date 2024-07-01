@@ -1,0 +1,80 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: 500px;
+  /* border-top: 5px solid #ff6600; */
+
+}
+
+.banner-content {
+  max-width: 50%;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  color: #333;
+  margin: 0;
+}
+
+.banner-content h2 {
+  font-size: 36px;
+  color: #beac94;
+  margin: 0;
+}
+
+.banner-content p {
+  margin-top: 20px;
+  color: #666;
+}
+
+.banner-buttons {
+  margin-top: 20px;
+}
+
+.banner-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.coffee-bean {
+  background-color: #beac94;
+  color: #fff;
+}
+
+.banner-image img {
+  width: 90%; /* Adjust based on the actual image size */
+}
+.banner-image {
+  width: 50%; 
+}
+.floating-coffee-beans {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1; /* Ensure it stays behind the main content */
+}
+
+.floating-coffee-beans img {
+  position: absolute;
+  /* Add more styling to control the position and animation of the beans */
+}
+.main-home-image {
+  width: 50%;
+}

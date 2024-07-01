@@ -20,9 +20,9 @@
   --tertiary-color: rgb(255, 255, 255);
   --hover-color: #ff6600;
   --border-radious: 95% 4% 97% 5% 94% 3% 95%;
-  --border-radious-hover: 4% 95% 6% 95% 95% 4% 92% 5%;
+  /* --border-radious-hover: 4% 95% 6% 95% 95% 4% 92% 5%; */
   --border: 0.2rem solid var(--main-color);
-  --border-hover: 0.2rem dashed var(--hover-color);
+  /* --border-hover: 0.2rem dashed var(--hover-color); */
   --coffee-bean-dark: #3e2723; /* Dark brown for coffee beans */
   --coffee-bean-medium: #4e342e; /* Medium brown for coffee beans */
   --coffee-bean-light: #5d4037; /* Light brown for coffee beans */
@@ -125,7 +125,7 @@ section {
 .btn:hover {
   border-radius: var(--border-radious-hover);
   border: var(--border-hover);
-  color: var(--hover-color);
+  /* color: var(--hover-color); */
 }
 
 .navigation-menu {
@@ -515,7 +515,7 @@ section {
   background-color: var(--cuppachino-color-light);
   background-position: center;
   background-size: cover;
-  border-top: 5px solid var(--secondary-color);
+  border-top: 5px solid #ff6600;
 }
 
 .footer .box-container {
@@ -566,11 +566,13 @@ section {
 .box-A-Icon {
   width: 50px;
   height: 50px;
-  background-color: #000000;
+  /* background-color: #000000; */
   font-size: 25px;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  border: 1px solid;
+
   justify-content: center;
 }
 

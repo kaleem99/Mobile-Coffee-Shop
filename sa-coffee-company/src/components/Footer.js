@@ -3,6 +3,7 @@ import "./Footer.css";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
+import logo from "../assets/images/logo.jpg";
 const FooterData = [
   {
     name: "coffee20@gmail.com",
@@ -22,16 +23,15 @@ const FooterData = [
 ];
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="Contact" className="footer">
       <div className="footer-content">
         <div className="footer-section logo">
           <img
-            src="/path/to/logo.png"
+            src={logo}
             alt="SA Coffee Company Image"
             className="footer-logo"
           />
           <div className="social-icons">
-           
             {FooterData.map((obj) => (
               <a rel="noreferrer" target="_blank" href={obj.url}>
                 <div className="box-A-Icon">{obj.icon}</div>
@@ -62,14 +62,14 @@ const Footer = () => {
           <h2>Contact</h2>
           <ul>
             <li>CONTACT US</li>
-            <li>1000 S Eighth Ave, New York 0019</li>
-            <li>Phone (646) 652-9813</li>
-            <li>info@Kafe.com</li>
+            <li>Johannesburg</li>
+            <li>Phone (123) 456-7891</li>
+            <li>sacoffeecompany@gmail.com</li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2024 Kafe - Coffee Theme. All rights reserved. Codeless</p>
+        <p>© 2024 SA Coffee Company - Coffee Theme. All rights reserved.</p>
         <div className="footer-links">
           <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
         </div>

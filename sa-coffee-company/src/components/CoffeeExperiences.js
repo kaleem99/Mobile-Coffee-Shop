@@ -155,7 +155,7 @@ const CoffeeExperience = () => {
               className="coffee-package"
             />
           </div>
-        ): <div style={{width: "100px"}}></div>}
+        ): (windowWidth > 716) ? <div style={{width: "100px"}}></div> : ""}
         <div className="ContentInner">
           <div className="item">
             {/* <img src="/path/to/perfect-cup-icon.png" alt="The Perfect Cup" /> */}

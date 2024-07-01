@@ -1,13 +1,5 @@
-/* body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-} */
-
 .who-we-are {
-  /* background-color: #171717; */
-
+  border-top: 5px solid #ff6600;
   background-color: #3b2d2d;
   color: #fff;
   padding: 50px;
@@ -15,12 +7,14 @@
   overflow: hidden;
   height: auto;
   width: 100%;
+  text-align: left;
 }
 
 .who-we-are .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .who-we-are .content::before {
@@ -41,8 +35,27 @@
   z-index: 1;
 }
 
+.who-we-are .about,
+.who-we-are .hours,
+.who-we-are .image {
+  max-width: 100%;
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
 .who-we-are .about {
   max-width: 40%;
+  flex: 1 1 40%;
+}
+
+.who-we-are .hours {
+  max-width: 25%;
+  flex: 1 1 25%;
+}
+
+.who-we-are .image {
+  max-width: 25%;
+  flex: 1 1 25%;
 }
 
 .who-we-are .about h2 {
@@ -70,17 +83,11 @@
   cursor: pointer;
 }
 
-.who-we-are .hours {
-  max-width: 25%;
-}
-
 .who-we-are .hours h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-strong {
-  color: #d8a35a;
-}
+
 .who-we-are .hours ul {
   list-style: none;
   padding: 0;
@@ -93,11 +100,86 @@ strong {
   font-size: larger;
 }
 
-.who-we-are .image {
-  max-width: 25%;
-}
-
 .who-we-are .image img {
   width: 100%;
   height: auto;
+}
+
+strong {
+  color: #d8a35a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .who-we-are .about,
+  .who-we-are .hours,
+  .who-we-are .image {
+    /* max-width: 100%; */
+
+    max-width: 90%;
+    flex: 1 1 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are {
+    padding: 20px;
+  }
+
+  .who-we-are .about h1 {
+    font-size: 28px;
+  }
+
+  .who-we-are .about p {
+    font-size: 14px;
+  }
+
+  .who-we-are .hours h2 {
+    font-size: 20px;
+  }
+
+  .who-we-are .hours ul {
+    font-size: 14px;
+  }
+
+  .who-we-are .hours li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    gap: 0px !important;
+  }
+  .who-we-are {
+    padding: 10px;
+  }
+
+  .who-we-are .about h1 {
+    font-size: 24px;
+  }
+
+  .who-we-are .about p {
+    font-size: 12px;
+  }
+
+  .who-we-are .hours h2 {
+    font-size: 18px;
+  }
+
+  .who-we-are .hours ul {
+    font-size: 12px;
+  }
+
+  .who-we-are .hours li {
+    margin-bottom: 15px;
+  }
+  .who-we-are .content::before {
+    top: -25%;
+    right: -35%;
+    left: 0;
+    margin: auto;
+  }
 }

@@ -12,15 +12,22 @@ const shopTimes = [
 ];
 const WhoWeAre = () => {
   return (
-    <div className="who-we-are">
+    <section id="About Us Section" className="who-we-are">
       <div className="content">
         <div className="about">
           <h2>Who we are</h2>
           <h1>About our coffee-shop</h1>
           <p>
-            Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
-            vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
-            Praesent gravida hendrerit ex, nec eleifend sem convallis vitae.
+            SA Coffee Company is a proudly women-owned business based in
+            Gauteng, South Africa. Our passion lies in delivering
+            premium-quality coffee to our customers nationwide. With a focus on
+            excellence, we take pride in our in-house roaster and packaging
+            facility, ensuring full control over the consistency and quality of
+            our coffee products. At SA Coffee Company, our mission is to bring
+            the rich flavors of the world coffee to customers across the nation.
+            Through strategic partnerships and a commitment to excellence, we
+            aim to make our premium coffee accessible to coffee lovers
+            everywhere.
           </p>
           <button>View products</button>
         </div>
@@ -38,7 +45,7 @@ const WhoWeAre = () => {
           <img src={mapImage} alt="Coffee" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
